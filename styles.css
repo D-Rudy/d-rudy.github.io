@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #78e08f;
+    --secondary-color: #30336b;
+    --complimentary-color: #60a3bc;
+    --contrast-color: #4a69bd;
+    --light-color: #e55039;
+    --last-color: #f6b93b;
+}
+
+body {
+
+    font-size: 2em;
+    background-color: #191919;
+    width: 100%;
+    text-align: center;
+}
+
+.container {
+    background: #191919;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+nav a {
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+nav {
+    width: 360px;
+    position: fixed;
+    left: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--secondary-color);
+}
+
+nav li {
+    padding: 40px;
+    list-style: none;
+}
+
+img {
+    border: #22153d 5px solid;
+    border-radius: 5%;
+    box-shadow: 12px 12px 2px 1px rgba(14, 14, 48, 0.2);
+}
+
+section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    opacity: 0;
+    transition: all ease-out .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section h1 {
+    color: #fff;
+    margin-left: 200px;
+    font-size: 50px;
+    text-transform: uppercase;
+    opacity: 0;
+}
+
+section:target {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+section:target h1 {
+    opacity: 0;
+    animation: 3s fadeIn forwards .5s;
+}
+
+#rudy {
+    background: var(--primary-color);
+}
+
+#formation {
+    background: var(--complimentary-color);
+}
+
+#hobbies {
+    background: var(--contrast-color);
+}
+
+#portfolio {
+    background: var(--light-color);
+}
+
+#contact {
+    background: var(--last-color);
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+    }
+}
+
+h1 {
+    text-shadow: 4PX 4px 4px #191919;
+    font-family: 'Exo 2';
+}
+
+/* MISE EN PAGE RUDY */
+#Rudy {
+    display: flex;
+    flex-flow: column;
+    
+
+}
+
+#Rudy h1 {
+    position: absolute;
+    top: 25%;
+    left: 33%;
+}
+
+#Rudy p {
+    position: absolute;
+    top: 50%;
+    left: 37%;
+}
+
+#Rudy ul {
+    list-style-type: none;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+}
