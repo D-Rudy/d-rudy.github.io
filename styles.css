@@ -57,6 +57,8 @@ nav li {
 }
 
 img {
+    width: 150px;
+    height: 150px;
     border: #22153d 5px solid;
     border-radius: 5%;
     box-shadow: 12px 12px 2px 1px rgba(14, 14, 48, 0.2);
@@ -81,6 +83,9 @@ section h1 {
     font-size: 50px;
     text-transform: uppercase;
     opacity: 0;
+    position: absolute;
+    top: 15%;
+    left: 40%;
 }
 
 section:target {
@@ -93,6 +98,21 @@ section:target {
 }
 
 section:target h1 {
+    opacity: 0;
+    animation: 3s fadeIn forwards .5s;
+}
+section li {
+    color: #000;
+    text-align: left;
+    margin-left: 200px;
+    font-size: 50px;
+    text-transform: uppercase;
+    opacity: 0;
+    list-style-type: none;
+    font-size: 36px;
+}
+
+section:target li {
     opacity: 0;
     animation: 3s fadeIn forwards .5s;
 }
@@ -129,28 +149,49 @@ h1 {
 }
 
 /* MISE EN PAGE RUDY */
-#Rudy {
+#rudy {
     display: flex;
     flex-flow: column;
+    color: #fff;
     
 
 }
 
-#Rudy h1 {
+#rudy h1 {
+    
     position: absolute;
-    top: 25%;
-    left: 33%;
+    top: 15%;
+    left: 40%;
 }
 
-#Rudy p {
+#rudy p {
     position: absolute;
-    top: 50%;
-    left: 37%;
+    top: 40%;
+    left: 45%;
 }
 
-#Rudy ul {
+#rudy ul {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
     position: absolute;
+    left: 40%;
+    top: 55%;
+    
+}
+#rudy li{
+    margin: 5%;
+}
+#copyrigth,span,#icons{
+    position: absolute;
+    color: white;
+    top: 90%;
     left: 50%;
-    top: 75%;
+}
+#icons{
+    position: absolute;
+    color: white;
+    top: 90%;
+    left: 66%;
 }
