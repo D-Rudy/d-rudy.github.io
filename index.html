@@ -1,107 +1,168 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Rudy D. Développeur d'applications">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <title>Rudy Duriez| Développement Web à Loos</title>
+    <meta name="description" content="Développeur web spécialisé dans la création de sites vitrines, e-commerce et applications web sur mesure à Loos. Expertise en refonte de sites internet.">
+    <link rel="canonical" href="https://www.votresite.fr">
+    <meta name="robots" content="index, follow">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Rudy D. | Développeur</title>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Votre Nom - Développeur Web",
+      "image": "https://www.votresite.fr/images/logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Votre adresse",
+        "addressLocality": "Votre Ville",
+        "postalCode": "Code Postal",
+        "addressCountry": "FR"
+      },
+      "url": "https://www.votresite.fr",
+      "telephone": "+33674910515",
+      "priceRange": "€€",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/votrepage",
+        "https://www.linkedin.com/in/votreprofil",
+        "https://github.com/D-Rudy"
+      ]
+    }
+    </script>
 </head>
-
 <body>
-    <header id="header">
-        <nav id="nav-menu">
-            <ul>
-                <li id="logo"><a href="#rudy"> <img src="img/RD.JPG" alt="ma photo"> <br> Rudy Duriez </a></li>
-                <li><a href="#formation">Formation</a></li>
-                <li><a href="#portfolio">Projet</a></li>
-                <li><a href="#hobbies">Hobbies</a></li>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">
+                <img src="assets/rdzpro_minimalist_cat_and_computer_logo_whit_letters_R_D_Z_ea8562f4-4ff7-4814-9a74-7ef3bf8e4bb2.png" alt="Logo Rudy - Développeur Web" width="100" height="100">
+            </a>
+            <button class="menu-toggle" aria-label="Ouvrir le menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main class="container">
-        <section id="rudy">
-            <h1>Rudy Duriez <br> <strong>Développeur</strong></h1>
 
-            <p>J'apprends la programmation depuis 2019.<br>
-                J'utilise les langages suivant: </p>
-
-            <ul>
-                <li id="html"><strong>HTML</strong></li>
-                <li id="css"><strong>CSS</strong></li>
-                <li id="js"><strong>JavaScript</strong></li>
-                <li id="js"><strong>Java</strong></li>
-                <li id="js"><strong>C++</strong></li>
-            </ul>
-            <div id="copyright">
-                <span>&lt/D-Rudy> (2020):</span>
-            </div>
-            <div id="icons">
-                <a href="http://www.twitter.fr"><i class="fa fa-twitter"></i></a>
-                <a href="http://www.linkedin.com/in/rudy-duriez-719254192 "><i class="fa fa-linkedin"></i></a>
+    <main>
+        <section id="accueil" class="hero">
+            <div class="hero-content">
+                <h1>Développeur Web à Loos</h1>
+                <p>Création de sites web professionnels, e-commerce et applications sur mesure</p>
+                <a href="#contact" class="btn">Démarrez votre projet</a>
             </div>
         </section>
 
-        <section id="formation">
-            <h1>Formation</h1>
-            <p>Technicien Développeur au CNAM de Lille</p>
-            <p>Bac +2 2021-2022</p>
+        <section id="services">
+            <div class="container">
+                <h2>Mes Services de Développement Web</h2>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h3>Sites Vitrines</h3>
+                        <p>Création de sites web professionnels et attractifs pour présenter votre activité et attirer de nouveaux clients.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Boutiques en Ligne</h3>
+                        <p>Développement de plateformes e-commerce performantes et sécurisées pour booster vos ventes en ligne.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Applications Web</h3>
+                        <p>Conception d'applications web sur mesure pour optimiser vos processus métier et améliorer votre productivité.</p>
+                    </article>
+                    <article class="service-card">
+                        <h3>Refonte de Site</h3>
+                        <p>Modernisation et optimisation de sites web existants pour améliorer leur performance et leur expérience utilisateur.</p>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <section id="portfolio">
-            <h1>Projet</h1>
-            <ul>
-                <li><a href="https://github.com/D-Rudy/PlantesUrbaines">Plantes Urbaines (java server pages)</a></li>
-                <li><a href="https://github.com/D-Rudy/CNAM.cpp/blob/main/solitaire.cpp">Un jeu de solitaire en C++</a></li>
-                <li><a href="https://github.com/D-Rudy/CNAM.java/tree/main/NFA032/Tp/simulateurDAssurance/src/com/simulateurAssurance"> Un simulateur d'assurance (java POO)</a></li>
-            </ul>
-        </section>
-
-        <section id="hobbies">
-            <h1>Hobbies</h1>
-
-            <ul>
-                <li id="aikido">Aikido</li>
-                <li id="kenjutsu">Kenjutsu</li>
-                <li id="lecture">Lecture</i></li>
-                <li id="film">Film</i></li>
-                <li id="informatique">Informatique</i></li>
-                <li id="renovation">Rénovation</li>
-            </ul>
+            <div class="container">
+                <h2>Projets Web Réalisés</h2>
+                <div class="portfolio-grid">
+                    <article class="portfolio-item">
+                        <img src="projet-vitrine.jpg" alt="Site vitrine pour une entreprise locale" width="400" height="300">
+                        <div class="portfolio-overlay">
+                            <h3>Site Vitrine - Entreprise Locale</h3>
+                            <a href="#" class="btn-small">Voir le projet</a>
+                        </div>
+                    </article>
+                    <article class="portfolio-item">
+                        <img src="projet-ecommerce.jpg" alt="Boutique en ligne de produits artisanaux" width="400" height="300">
+                        <div class="portfolio-overlay">
+                            <h3>E-commerce - Produits Artisanaux</h3>
+                            <a href="#" class="btn-small">Voir le projet</a>
+                        </div>
+                    </article>
+                    <article class="portfolio-item">
+                        <img src="projet-application.jpg" alt="Application web de gestion pour PME" width="400" height="300">
+                        <div class="portfolio-overlay">
+                            <h3>Application Web - Gestion PME</h3>
+                            <a href="#" class="btn-small">Voir le projet</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
         </section>
 
         <section id="contact">
-            <table>
-                <form>
-                    <tr>
-                        <legend>
-                            <h1>Contactez moi</h1>
-                        </legend>
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="Nom"></td>
-                    </tr>
-                    <tr>
-                        <td><input type="email" placeholder="Email"></td>
-                    </tr>
-                    <tr>
-                        <td><textarea name="message" placeholder="Votre message ici..." id="" cols="30"
-                                rows="10"></textarea></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" name="send" id="send"></td>
-                    </tr>
+            <div class="container">
+                <h2>Discutons de Votre Projet Web</h2>
+                <form action="/submit-form" method="POST">
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" name="nom" required>
+                    
+                    <label for="email">Votre email</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="projet">Type de projet</label>
+                    <select id="projet" name="projet" required>
+                        <option value="">Choisissez une option</option>
+                        <option value="site-vitrine">Site Vitrine</option>
+                        <option value="boutique-en-ligne">Boutique en Ligne</option>
+                        <option value="application-web">Application Web</option>
+                        <option value="refonte-site">Refonte de Site</option>
+                    </select>
+                    
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" placeholder="Décrivez brièvement votre projet" required></textarea>
+                    
+                    <button type="submit" class="btn">Envoyer votre demande</button>
                 </form>
-            </table>
+            </div>
         </section>
-        <div class="trait"></div>
-
     </main>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Rudy Duriez - Développeur Web à Loos. Tous droits réservés.</p>
+        </div>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
-
 </html>
